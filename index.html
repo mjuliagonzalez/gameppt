@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel O Tijera</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- LINK BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <h1>Piedra, Papel O Tijera</h1>
+        <div class="herramientas">
+            <img src="./img/iconos.png" alt="Piedra Papel o tijera">
+        </div>
+    </header>
+
+    <main>
+        <p class="intrucciones" id="intrucciones"> 
+            El primero en llegar a <span class="text-color"> 5 </span> puntos <span class="text-color"> gana</span>.
+        </p>
+
+        <div class="marcador">
+            <p class="nombre nombre-jugador">Jugador</p>
+            <p class="nombre nombre-computadora">PC</p>
+            <p class="puntos">
+                <span id="puntos-usuario">0</span>
+                <span>-</span>
+                <span id="puntos-computadora">0</span>
+            </p>
+        </div>
+        <div class="elegir-tu-arma" id="elegir-tu-arma">
+            <h2>Elige tu arma para el proximo turno.</h2>
+            <div class="armas">
+                <button class="arma" id="piedra🪨">🪨</button>
+                <button class="arma" id="papel📄" >📄</button>
+                <button class="arma" id="tijera✂️" >✂️</button>
+            </div>
+        </div>
+        <div class="mensaje disabled" id="mensaje" >
+            <p>
+                Elegiste <span class="eleccion" id="eleccion-usuario" > papel📄</span>. <br>
+                Y la computadora eligio <span class="eleccion" id="eleccion-computadora" >tijera✂️</span>
+            </p>
+            <p id="gana-punto">¡Anotaste un punto!🔥</p>
+        </div>
+        <button class="btn disabled" id="reiniciar"> Reiniciar Juego</button>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-texto">
+            <small>Hecho por Juliana Gonzalez. <i class="bi bi-heart"></i></small>
+        </p>
+        <p class="footer-texto">
+            <small>Practicas 2023.</small>
+        </p>
+        <div class="enlaces">
+            <a class="enlace" href="https://github.com/mjuliagonzalez" ><i class="bi bi-github fotter-enlace"></i></a>
+            <a class="enlace" href="https://www.linkedin.com/in/juliana-gonzalez-contreras/"><i class="bi bi-linkedin"></i></a>
+            <a class="enlace" href="http://google.com"><i class="bi bi-code-square"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
